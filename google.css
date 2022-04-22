@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+section{
+    position: relative;
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+}
+header{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    right: 0;
+}
+header ul{
+    display: flex;
+    padding-right: 20px;
+    align-items: center;
+}
+header li{
+    list-style: none;
+    padding: 0 10px;
+}
+header li a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+.material-icons-outlined{
+    opacity: .6;
+    padding-right: 10px;
+}
+.signin{
+    background-color: rgb(66, 101, 214);
+    padding: 8px 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+.signin a{
+    color: white;
+}
+.main{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+}
+.main img{
+    transform: scale(.60);
+}
+.main .src{
+    position: relative;
+    display: flex;
+    width: 500px;
+    justify-content: center;
+}
+.main .src .search{
+    position: relative;
+    width: 500px;
+    border-radius: 20px;
+    border: 1px solid rgb(196, 193, 193);
+    padding: 10px 40px;
+    margin-bottom: 20px;
+}
+.main .src .icon{
+    display: flex;
+    position: absolute;
+    width: 480px;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px; */
+    line-height: 50px;
+    pointer-events: none;
+    opacity: .5;
+}
+.btn{
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.btn button{
+    padding: 3px 10px;
+    margin: 0px 10px;
+    background-color: rgba(215, 228, 239, 0.258);
+    border: 1px solid rgba(209, 209, 209, 0.333)
+}
+.btn button:hover{
+    border: 1px solid rgb(187, 186, 186);
+}
+.lang a{
+    text-decoration: none;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(216, 216, 216);
+    opacity: .6;
+    padding: 0;
+}
+.first{
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid rgb(144, 144, 144);
+    padding-left: 40px;
+}
+.second{
+    position:relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.second ul{
+    list-style: none;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.second ul li{
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    margin: 0px 10px;
+}
+.second ul li:hover{
+    border-bottom: 1px solid rgb(64, 64, 64);
+}
+@media (max-width:768px){
+    .main .src{
+        width: 80%;
+    }
+    .main .src .search{
+        width: 50%;
+    }
+    .main .src .icon{
+        width: 70%;
+    }
+    .signin{
+        background-color: tomato;
+    }
+}
